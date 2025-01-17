@@ -77,3 +77,15 @@
 # print(math.sqrt(36)) # returns the square root of a number
 # print(math.ceil(9.1)) # returns the rounded up value
 # print(math.floor(9.9)) # returns the rounded down value
+
+# if = Do some code only if some condition is true 
+# else do something
+
+# age = int(input("Enter your age: "))
+
+# if age >= 18:
+#     print("You are eligible to vote in INDIA!")
+# elif age < 0:
+#     print("You are not born yet!")  
+# else:
+#     print("Sorry, you are not eligible to vote in INDIA")
