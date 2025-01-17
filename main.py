@@ -49,3 +49,12 @@
 # print(age)
 
 #input() = A funtion that prompts the user to enter data. Returns the enteres data as a string
+
+# name = input("Enter your name: ")
+# age = int(input("Enter your age: ")) #typecasting entered string type to int
+
+# age += 1
+
+# print(f"Hello {name}")
+# print("Happy Birthday!")
+# print(f"You are {age} years old")
