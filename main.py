@@ -237,3 +237,11 @@
 
 # print("TIME'S UP!") 
 
+# nested loop = A loop within another loop (outer, inner)
+#               outer loop:
+#                   inner loop:
+
+# for i in range(3): # iterates for 3 times
+#     for j in range(1, 10): # iterates from 1 to 9
+#         print(j, end = " ") # usually end of a print statement is new line, but we can modify it
+#     print() # prints new line
