@@ -226,3 +226,14 @@
 #     print(i)
 
 # continue, break keywords work in the same manner as it works with other programming languages
+
+# import time
+
+# my_time = int(input("Enter the time in seconds: "))
+
+# for i in range(0, my_time):
+#     print(i)
+#     time.sleep(1) # Delay execution for a given number of seconds. The argument may be a floating-point number for subsecond precision.
+
+# print("TIME'S UP!") 
+
