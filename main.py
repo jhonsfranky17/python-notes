@@ -244,4 +244,27 @@
 # for i in range(3): # iterates for 3 times
 #     for j in range(1, 10): # iterates from 1 to 9
 #         print(j, end = " ") # usually end of a print statement is new line, but we can modify it
-#     print() # prints new line
+#     print() # prints new line outside inner loop
+
+# collection = single "variable" used to store multiple values
+# List = [] ordered and changeable. Duplicates OK
+# Set = {} unordered and immutable, but Add/Remove OK. No duplicates
+# Tuple = () ordered and unchangeable. Duplicates OK. Faster
+
+# List
+# fruits = ["apple", "banana", "grape", "coconut"]
+# print(fruits) # prints the entire list 
+# print(fruits[3]) # prints the item at the 3rd index, here coconut. Also remember indexing operator has [start : end : step]
+
+# for fruit in fruits: # iterates through the list items one at a time
+#     print(fruit)
+
+# print("apple" in fruits) # checks whether the element is present in the list or not. Returns a boolean value.
+# fruits.append("pineapple") # to add an element to the end of the list, use append function
+# fruits.remove("pineapple") # to remove an element from the list, use remove function
+# fruits.insert(0, "pineapple") # to insert an element at the desired index, use insert function
+# fruits.sort() # sorts the list in ascending order
+# fruits.reverse() # reverses the list. If you want to sort the list in descending order, you sort the list first and then use the reverse function to reverse the list.
+# fruits.clear() # to clear a list
+# fruits.index("apple") # to find the index of the desired element in the list
+# fruits.count("apple") # to count the number of times an element appears in the list, use count function as list supports duplicates.
