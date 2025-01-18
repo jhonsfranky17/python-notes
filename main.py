@@ -194,3 +194,17 @@
 # print(f"Price 1 is {price1:.1f}")
 # print(f"Price 2 is {price2:.1f}")
 # print(f"Price 3 is {price3:.1f}")
+# you can also use multiple specifiers together
+
+# while loop = execute some code WHILE some condition remains true
+
+# name = input("Enter your name: ")
+
+# while name == "":
+#     print("You did not enter your name")
+#     name = input("Enter your name: ")
+
+# print(f"Hello {name}")
+
+# while is kind of "if statement" (executes the statements below it only once) but executes the statements until the condition evaluates to false
+
