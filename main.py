@@ -141,7 +141,7 @@
 # string methods
 
 # name = input("Enter your full name: ")
-phone_number = input("Enter your phone number: ")
+# phone_number = input("Enter your phone number: ")
 
 # print(len(name)) # returns the length of the string
 # result = name.find("n") # returns the index (starts at 0) of the first occurence of the character
@@ -161,3 +161,15 @@ phone_number = input("Enter your phone number: ")
 
 # help(str) # returns all the string 
 
+# indexing = accessing elements of a sequence using [] (indexing operator)
+#            [start : end : step] 
+
+# credit_number = "123-34343-2313-323"
+
+# print(credit_number[0]) # returns the first character of the string 
+# print(credit_number[:4]) # returns the characters till the end index (excluded) from the beginning if the start index is not mentioned
+# print(credit_number[5:9]) # returns the characters within the range
+# print(credit_number[5:]) # returns all the characters if from the start index if the end is not mentioned
+# print(credit_number[-1]) # returns the last character, negative indices return characters from the end
+# print(credit_number[::3]) # returns every 3rd character starting from the first character (included)
+# print(credit_number[::-1]) # reverses the string, add -1 at the end to reverse the given string
