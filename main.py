@@ -208,3 +208,21 @@
 
 # while is kind of "if statement" (executes the statements below it only once) but executes the statements until the condition evaluates to false
 
+# for loops = execute a block of code a fixed number of times.
+#            You can iterate over a range, string, sequence, etc
+
+# for i in range(1, 11): # end exclusive
+#     print(i)
+
+# for i in reversed(range(1, 11)): # counts from backwards, enclose the range function within the reversed() 
+#     print(i)
+
+# for i in range(1, 11, 2): # returns every 2nd element starting from 'start'
+#     print(i)
+
+# credit_card = "1233-2243-232-343"
+
+# for i in credit_card: # iterates over every element of the string
+#     print(i)
+
+# continue, break keywords work in the same manner as it works with other programming languages
