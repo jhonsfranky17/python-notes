@@ -154,7 +154,9 @@ phone_number = input("Enter your phone number: ")
 # result = name.isalpha() # returns true if the string only contains alphabets
 # result = phone_number.count("9") # counts the number of given character in the string
 # result = phone_number.replace("9", "6") # replaces one character with another
+# result = phone_number.startswith("0") # returns true if the string starts with the desired character
+# result = phone_number.endswith("0") # returns true if the string ends with the desired character
 
 # print(result)
 
-# help(str) # returns all the string methods
+# help(str) # returns all the string 
