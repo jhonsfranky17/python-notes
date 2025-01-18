@@ -252,6 +252,7 @@
 # Tuple = () ordered and unchangeable. Duplicates OK. Faster
 
 # List
+
 # fruits = ["apple", "banana", "grape", "coconut"]
 # print(fruits) # prints the entire list 
 # print(fruits[3]) # prints the item at the 3rd index, here coconut. Also remember indexing operator has [start : end : step]
@@ -268,3 +269,20 @@
 # fruits.clear() # to clear a list
 # fruits.index("apple") # to find the index of the desired element in the list
 # fruits.count("apple") # to count the number of times an element appears in the list, use count function as list supports duplicates.
+
+# Set
+
+# fruits = {"apple", "banana", "pineapple", "grape"}
+# print(fruits) # unordered when printing
+
+# fruits.add("orange") # adds an element to the set
+# fruits.remove("apple") # removes an element from the set
+# fruits.pop() # removes the first element from the set but it is unordered
+
+# Tuple
+
+# fruits = ("apple", "banana", "pineapple", "grape")
+# print(len(fruits)) # returns the length of the tuple
+# print(fruits.index("apple")) # returns the index of the element in the set
+# print(fruits.count("apple")) # returns the count of the element
+
