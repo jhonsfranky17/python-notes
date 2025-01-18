@@ -137,3 +137,24 @@
 # num = 5
 
 # print("Positive" if num > 0 else "Negative")
+
+# string methods
+
+# name = input("Enter your full name: ")
+phone_number = input("Enter your phone number: ")
+
+# print(len(name)) # returns the length of the string
+# result = name.find("n") # returns the index (starts at 0) of the first occurence of the character
+# result = name.rfind("n") # returns the index of the last occurence of the character
+# If the given character is not found in the string, python returns -1
+# result = name.capitalize() # capitalizes the first character of the string
+# result = name.upper() # capitalizes the entire string
+# result = name.lower() # returns lowercase string
+# result = name.isdigit() # returns true if the string only contains digits
+# result = name.isalpha() # returns true if the string only contains alphabets
+# result = phone_number.count("9") # counts the number of given character in the string
+# result = phone_number.replace("9", "6") # replaces one character with another
+
+# print(result)
+
+# help(str) # returns all the string methods
