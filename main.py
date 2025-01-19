@@ -159,7 +159,7 @@
 
 # print(result)
 
-# help(str) # returns all the string 
+# help(str) # returns all the string methods
 
 # indexing = accessing elements of a sequence using [] (indexing operator)
 #            [start : end : step] 
