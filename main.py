@@ -407,3 +407,34 @@
 # print(net_price(500))
 
 # default parameters should be at the end of the parameter list
+
+# keyword arguments = an argument preceded by an identifier
+#                     helps with readability
+#                     1. positional, 2. default, 3. KEYWORD, 4. arbitrary
+
+# def hello(greeting, title, first, last):
+#     print(f"{greeting} {title} {first} {last}")
+
+# hello(first="Franklin", greeting="Hello", last="Johnson", title="Mr.",)
+
+# print("1", "2", "3", "4", "5", sep="-") # here sep is a keyword argument
+
+# arbitrary argument
+# args = allows you to pass multiple non-key arguments
+# **kwargs = allows you to pass multiple keyword-arguments
+# * unpacking operator
+# 1. positional 2. default 3. keyword 4. ARBITRARY
+
+# def add(*nums): # nums is a tuple which consists of all the arguments passed when invoked
+#     total = 0
+#     for num in nums:
+#         total+= num
+#     return total
+
+# print(add(1,2,3,4,5,6,7))
+
+# def print_details(**kwargs): # kwargs is a dictionary, so you can traverse through kwargs as you would traverse through a dictionary
+#     for key, value in kwargs.items():
+#         print(f"{key} : {value}")
+
+# print_details(first_name="Franklin", last_name="Johnson", age=24, state="Kerala")
