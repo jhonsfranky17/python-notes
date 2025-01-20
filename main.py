@@ -373,3 +373,25 @@
 # random.shuffle(cards) # randomly shuffles the cards list
 
 # print(cards)
+
+# function = A block of reusable code
+#            place () after the function name to invoke it
+
+# def hello_world(): # using "def" keyword, we "define a function" followed by a valid function name, paranthesis and a colon
+#     print("Hello World!")
+#     print("My name is Franklin Jetty Johnson")
+#     print("I am 24 years old")
+#     print("I am currently doing Data Science in IIT Guwahati")
+#     print("Thank You!") 
+
+# hello_world() # invoking the function
+
+# return = statement used to end a function
+#          and send a result back to the caller
+
+# def add(x, y):
+#     return x + y
+
+# print(add(10, 20))
+
+# 
