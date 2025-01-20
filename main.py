@@ -332,7 +332,7 @@
 # for key, value in items: # iterating through each key value pair and printing it
 #     print(f"{key} : {value}")
 
-# Concession stand program
+# concession stand program
 
 # menu = {
 #     "pizza" : 3.00,
@@ -359,3 +359,17 @@
 #     print(item, end=" ")
 
 # print(f"TOTAL: {total}")
+
+# generating random numbers in python
+
+# import random 
+
+# options = ("rock", "paper", "scissors")
+# cards = ["2", "3", "4", "A", "J", "K", "Q", "10"]
+
+# number = random.randint(1, 6) # generates a random whole integer within the range specified
+# number = random.random() # returns a random floating point number between 0 and 1
+# option = random.choice(options) # returns a random choice from the options tuple
+# random.shuffle(cards) # randomly shuffles the cards list
+
+# print(cards)
