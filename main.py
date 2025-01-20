@@ -305,12 +305,12 @@
 # dictionary = a collection of {key:value} pairs
 #              ordered and changeable, No duplicates
 
-capitals = {
-    "USA" : "Washington DC",
-    "India" : "New Delhi",
-    "China" : "Beijing",
-    "Russia" : "Moscow"
-}
+# capitals = {
+#     "USA" : "Washington DC",
+#     "India" : "New Delhi",
+#     "China" : "Beijing",
+#     "Russia" : "Moscow"
+# }
 
 # print(capitals.get("India")) # accessing values in a dictionary using the key
 # capitals.update({"Germany" : "Berlin"}) # to add a new {key:value} pair to the dictionary
@@ -331,3 +331,31 @@ capitals = {
 
 # for key, value in items: # iterating through each key value pair and printing it
 #     print(f"{key} : {value}")
+
+# Concession stand program
+
+# menu = {
+#     "pizza" : 3.00,
+#     "popcorn" : 4.50,
+#     "pepsi" : 3.00,
+#     "fries" : 2.50,
+#     "chips" : 4.50,
+#     "pretzel" : 5.00
+# }
+# cart = []
+# total = 0
+
+# while True:
+#     food = input("Add a food item to the cart (q to quit): ").lower()
+#     if food == "q":
+#         break
+#     elif menu.get(food) is not None:
+#         cart.append(food)
+#         total += menu.get(food)
+#     else:
+#         print(f"{food} is not present in the menu")
+
+# for item in cart:
+#     print(item, end=" ")
+
+# print(f"TOTAL: {total}")
