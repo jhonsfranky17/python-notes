@@ -465,3 +465,24 @@
 #     print(f"{letter} is present in the word")
 
 
+# list comprehension = a concise way to create lists in python 
+#                      compact and easier to read than traditional loops
+#                      syntax : [expression for value in iterable if condition (optional)]
+
+# doubles = [x * 2 for x in range(1,11)]
+
+# print(doubles)
+
+# fruits = ["apple", "banana", "orange", "pineapple"]
+# fruits = [fruit.upper() for fruit in fruits]
+
+# print(fruits)
+
+# numbers = [1,2,-2,0,-5,9]
+
+# positive_numbers = [number for number in numbers if number >= 0] # read as for every number in iterable numbers, if the number is greater than or equal to 0, return the number
+# negative_numbers = [number for number in numbers if number < 0]  # read as for every number in iterable numbers, if the number is less than 0, return the number
+
+# print(positive_numbers)
+# print(negative_numbers)
+
