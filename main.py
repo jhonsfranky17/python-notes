@@ -438,3 +438,6 @@
 #         print(f"{key} : {value}")
 
 # print_details(first_name="Franklin", last_name="Johnson", age=24, state="Kerala")
+
+# iterables = an object/collection that can return its elements one at a time, allowing it to be iterated over in a loop
+# eg: list, set, tuple, dictionary, string
