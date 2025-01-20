@@ -301,3 +301,33 @@
 # print(groceries[0][3]) # to access an element, we use two index operator
 
 # you can do the same with tuple and set
+
+# dictionary = a collection of {key:value} pairs
+#              ordered and changeable, No duplicates
+
+capitals = {
+    "USA" : "Washington DC",
+    "India" : "New Delhi",
+    "China" : "Beijing",
+    "Russia" : "Moscow"
+}
+
+# print(capitals.get("India")) # accessing values in a dictionary using the key
+# capitals.update({"Germany" : "Berlin"}) # to add a new {key:value} pair to the dictionary
+# capitals.update({"USA" : "Detroit"}) # you can also use the update method to update the existing {key:value} pair
+# capitals.pop("China") # to remove a {key:value} pair from the dictionary, use pop method
+# capitals.popitem() # to remove the latest {key:value} pair added
+# capitals.clear() # to clear the dictionary
+
+# keys = capitals.keys() # returns all the keys of the dictionary
+
+# for key in keys: # iterating through every key of the dictionary
+#     print(key)
+
+# for value in capitals.values(): # iterating through all the values in the dictionary
+#     print(value)
+
+# items = capitals.items() # returns a 2D list of tuples like object providing a view on the dict's items
+
+# for key, value in items: # iterating through each key value pair and printing it
+#     print(f"{key} : {value}")
