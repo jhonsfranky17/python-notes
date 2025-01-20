@@ -286,3 +286,18 @@
 # print(fruits.index("apple")) # returns the index of the element in the set
 # print(fruits.count("apple")) # returns the count of the element
 
+# 2D List = Made up of lists within list
+
+# fruits = ["apple", "oranges", "banana"]
+# vegetables = ["celery", "carrots", "potatoes"]
+# meats = ["chicken", "fish", "turkey"]
+
+# groceries = [fruits, vegetables, meats] # one way of creating a 2D list
+# groceries = [["apple", "oranges", "banana"],
+#              ["celery", "carrots", "potatoes"],
+#              ["chicken", "fish", "turkey"]
+#              ] # another way of creating a 2D list
+
+# print(groceries[0][3]) # to access an element, we use two index operator
+
+# you can do the same with tuple and set
