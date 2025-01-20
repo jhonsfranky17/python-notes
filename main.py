@@ -441,3 +441,27 @@
 
 # iterables = an object/collection that can return its elements one at a time, allowing it to be iterated over in a loop
 # eg: list, set, tuple, dictionary, string
+
+# membership operators = used to test whether a value or variable is found in a sequence
+#                        (string, list, tuple, set, or dictionary)
+#                        1. in
+#                        2. not in
+
+# word = "FRANKLIN"
+
+# letter = input("Enter a letter: ")
+
+# while True:
+#     if letter in word:
+#         print(f"{letter} is present in the word {word}")
+#         break
+#     else:
+#         print(f"{letter} is not present in the word")
+#         letter = input("Enter a letter: ")
+
+# if letter not in word:
+#     print(f"{letter} is not present in the word")
+# else:
+#     print(f"{letter} is present in the word")
+
+
