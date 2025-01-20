@@ -286,6 +286,8 @@
 # print(fruits.index("apple")) # returns the index of the element in the set
 # print(fruits.count("apple")) # returns the count of the element
 
+# Jan 20th, 2025
+
 # 2D List = Made up of lists within list
 
 # fruits = ["apple", "oranges", "banana"]
@@ -394,4 +396,14 @@
 
 # print(add(10, 20))
 
-# 
+# default arguments = A default value for certain parameters
+#                     default is used when that argument is omitted
+#                     make your functions more flexible, reduces number of arguments
+#                     1. positional, 2. DEFAULT, 3. keyword, 4. arbitrary
+
+# def net_price(list_price, discount = 0, tax = 0.05):
+#     return list_price * (1 - discount) * (1 + tax)
+
+# print(net_price(500))
+
+# default parameters should be at the end of the parameter list
