@@ -32,7 +32,7 @@
 #     print("You are not a student")
 
 # typecasting - the process of converting a variable from one data type to another
-# str(), int(), float(), bool()
+# str(), int(), float(), bool(), list()
 
 # name = "Franklin Jetty Johnson"
 # age = 24
@@ -536,4 +536,47 @@
 
 # from math import pi 
 # print(pi)
+
+# variable scope = where a variable is visible and accessible
+# scope resolution = (LEGB) Local -> Enclosed -> Global -> Built-in
+
+# substitution cipher encryption program
+
+# import random
+# import string
+
+# chars = string.punctuation + string.digits + string.ascii_letters
+# chars = list(chars)
+# keys = chars.copy()
+
+# random.shuffle(keys)
+
+# plain_text = input("Enter a message to encrypt: ")
+# cipher_text = ""
+
+# # encryption
+# for letter in plain_text:
+#     index = chars.index(letter)
+#     cipher_text += keys[index]
+
+# print(f"Original message: {plain_text}")
+# print(f"Encrypted message: {cipher_text}")
+
+# # decryption
+
+# cipher_text = input("Enter a message to decrypt: ")
+# plain_text = ""
+
+# for letter in cipher_text:
+#     index = keys.index(letter)
+#     plain_text += chars[index]
+
+# print(f"Original message: {cipher_text}")
+# print(f"Decrypted message: {plain_text}")
+
+# object = a "bundle" of related attributes (variable) and methods (functions)
+# eg: phone, cup, book
+# you need a "class" to create many objects
+
+# class = (blueprint) used to design the structure and layout of an object
 
