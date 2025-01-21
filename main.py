@@ -755,3 +755,40 @@
 # print(triangle.filled)
 # print(triangle.width)
 # print(triangle.height)
+
+# you can also use super() to invoke a function defined in the parent class
+
+# polymorphism = greek words meaning to "have many forms or faces"
+#                poly = many
+#                morphe = form
+
+#                two ways to achieve polymorphism
+#                1. inheritance = an object could be treated of the same type as a parent class
+#                2. "duck typing" = object must have necessary attributes/methods
+
+# duck typing = another way to achieve polymorphism besides inheritance
+#               object must have the minimum necessary attributes/methods
+#               if it looks like a duck and quacks like a duck, it must be a duck
+
+# class Animal:
+#     alive = True
+    
+# class Dog(Animal):
+#     def speak(self):
+#         print("WOOF!")
+
+# class Cat(Animal):
+#     def speak(self):
+#         print("MEOW")
+
+# class Car:
+#     alive = False
+
+#     def speak(self):
+#         print("HONK!")
+
+# animals = [Dog(), Cat(), Car()]
+
+# for animal in animals:
+#     animal.speak()
+#     print(animal.alive)
