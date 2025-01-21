@@ -522,3 +522,18 @@
 #             return False
 
 # print(is_weekend("Monday"))
+
+# module = a file containting code you want to include in your program
+#          use 'import' to include a module (built-in or your own)
+#          useful to break up a large program into reusable separate files
+
+
+# import math
+# print(math.pi)
+
+# import math as m # giving an alias
+# print(m.pi)
+
+# from math import pi 
+# print(pi)
+
