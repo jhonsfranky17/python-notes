@@ -588,23 +588,41 @@
 #         self.for_sale = for_sale
     
 #     def drive(self): # method (function inside an object)
-#         print("You drive the car")
+#         print(f"You drive the {self.model}")
 
 #     def stop(self): # method (function inside an object)
-#         print("You stop the car")
+#         print(f"You stop the {self.model}")
     
 # car1 = Car("BMW", 2025, "Black", False) # creating an object
 # car2 = Car("Benz", 2024, "White", True) # creating an object
 
-# print(car1.model)
-# print(car1.year)
-# print(car1.color)
-# print(car1.for_sale)
+# # print(car1.model)
+# # print(car1.year)
+# # print(car1.color)
+# # print(car1.for_sale)
 
-# print(car2.model)
-# print(car2.year)
-# print(car2.color)
-# print(car2.for_sale)
+# # print(car2.model)
+# # print(car2.year)
+# # print(car2.color)
+# # print(car2.for_sale)
 
 # car1.drive()
-# car2.stop()
+# car1.stop()
+
+# class variables = shared among all instances of a class
+#                   defined outside the constructor
+#                   allow you to share data among all objects created from that class
+
+# class Car: # class name should be capital
+
+#     company = "Honda" # class variables are accessed by all objects, hence declared outside the constructor
+
+#     def __init__(self, model, year, color, for_sale): # constructor to initialise the object
+#         self.model = model
+#         self.year = year
+#         self.color = color
+#         self.for_sale = for_sale
+
+
+# print(Car.company) # you can also access the class variable using any of the objects but it is best to use it with the class name
+
