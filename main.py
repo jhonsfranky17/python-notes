@@ -626,3 +626,43 @@
 
 # print(Car.company) # you can also access the class variable using any of the objects but it is best to use it with the class name
 
+# inheritance = allows a class to inherit attributes and methods from another class
+#               helps with code reusability and extensibility
+#               class Child(Parent)
+
+# class Animal: # parent class
+#     def __init__(self, name):
+#         self.name = name
+#         self.is_alive = True
+    
+#     def eat(self):
+#         print(f"{self.name} is eating")
+
+#     def sleep(self):
+#         print(f"{self.name} is sleeping")
+
+# class Dog(Animal): # inheriting parent class "Animal"
+#     def speak(self):
+#         print("WOOF!")
+
+# class Cat(Animal): # inheriting parent class "Animal"
+#     def speak(self):
+#         print("MEOW!")
+
+# class Mouse(Animal): # inheriting parent class "Animal"
+#     def speak(self):
+#         print("SQUEEK!")
+
+# dog = Dog("Scooby")
+# cat = Cat("Liz")
+# mouse = Mouse("Rode")
+
+# print(cat.name)
+# print(cat.is_alive)
+
+# cat.eat()
+# cat.sleep()
+# dog.speak()
+# cat.speak()
+# mouse.speak()
+
