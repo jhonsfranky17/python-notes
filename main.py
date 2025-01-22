@@ -846,3 +846,33 @@
 # static methods = best for utility functions that do not need access to class data
 # class methods = best for class-level data or require access to the class itself
 
+# magic methods = dunder methods (double underscore) __init__, __str__, __eq__
+#                 they are automatically called by many of python's built-in operations
+#                 they allow developers to define or customize the behavior of objects
+
+
+# class Book:
+
+#     def __init__(self, name, author):
+#         self.name = name
+#         self.author = author
+    
+#     def __str__(self):
+#         return f"{self.name} by {self.author}"
+
+#     def __eq__(self, other): # self holds the first object and other holds the second object
+#         return self.name == other.name and self.author == other.author # returns a boolean based on the evaluation
+
+# book1 = Book("The Alchemist", "Paulo Coelho")
+# book2 = Book("The Alchemist", "Paulo Coelho")
+
+# # print(book1) # if we try to print the object directly, it will give us the memory address. 
+# #                If we want to customize this behavior, we can use magic method __str__ to return whatever we want
+
+# # print(book1)
+# # print(book2)
+
+# # print(book1 == book2) # returns false even if the name and the author of the books is the same. We can use __eq__ to customize it
+
+# print(book1 == book2) # returns true after customizing the magic method __eq__
+
