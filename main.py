@@ -876,3 +876,108 @@
 
 # print(book1 == book2) # returns true after customizing the magic method __eq__
 
+# @property = decorator used to define a method as a property (it can be accessed like an attribute)
+#             benefit: add additional logic when read, write, or delete attributes
+#             gives you getter, setter, and deleter method
+
+# class Rectangle:
+
+#     def __init__(self, width, height):
+#         self._width = width # by preceding an underscore, we turn the variable into protected type which can only be accessed within the class
+#         self._height = height # by preceding an underscore, we turn the variable into protected type which can only be accessed within the class
+    
+
+#     @property
+#     def width(self):
+#         return f"{self._width:.1f}cm"
+    
+#     @property
+#     def height(self):
+#         return f"{self._height:.1f}cm"
+    
+#     @width.setter
+#     def width(self, new_width):
+#         if new_width > 0:
+#             self._width = new_width
+#         else:
+#             print("Width must be greater than zero")
+
+#     @height.setter
+#     def height(self, new_height):
+#         if new_height > 0:
+#             self._height = new_height
+#         else:
+#             print("Height must be greater than zero")
+
+#     @width.deleter
+#     def width(self):
+#         del self._width
+#         print("Width has been deleted")
+
+#     @height.deleter
+#     def height(self):
+#         del self._height
+#         print("Height has been deleted")
+            
+# rectangle = Rectangle(5, 10)
+
+# print(rectangle.width)
+# print(rectangle.height)
+
+# rectangle.width = 9
+# rectangle.height = 9
+
+# print("New values: ")
+# print(rectangle.width)
+# print(rectangle.height)
+
+# del rectangle.width
+# del rectangle.height
+
+# decorator = a function that extends the behavior of another function
+#             w/o modifying the base function
+#             pass the base function as an argument to the decorator
+
+#             @add_sprinkles
+#             get_ice_cream("vanilla")
+
+# def add_sprinkles(func): # decorator function
+#     def wrapper(*args, **kwargs): # without this function, the get_ice_cream() gets invoked automatically when the decorator is added
+#         print("You add sprinkles")
+#         func(*args, **kwargs) # base function that we received as a parameter
+#     return wrapper
+
+# def add_fudge(func): # decorator function
+#     def wrapper(*args, **kwargs): # without this function, the get_ice_cream() gets invoked automatically when the decorator is added
+#         print("You add fudge")
+#         func(*args, **kwargs) # base function that we received as a parameter
+#     return wrapper
+
+# @add_sprinkles
+# @add_fudge
+# def get_ice_cream(flavor):
+#     print(f"Here is your {flavor} ice cream")
+
+# get_ice_cream("vanilla")
+# you can apply more than one decorator to the base function 
+
+# exception = an event that interrupts the flow of a program
+#             (ZeroDivisionError, TypeError, ValueError)
+#             1.try, 2.except, 3.finally
+
+# ZeroDivisionError = occurs when we try to divide a number by 0. 
+# TypeError = if we apply an operation that is not supported between the two objects, then a TypeError exception occurs
+# ValueError = when an object is given the incorrect value, the ValueError is raised.
+
+# try: # any code that can potentially lead to an exception should be placed under try
+#     number = int(input("Enter a number: "))
+#     print(1/ number)
+# except ZeroDivisionError: # handles any ZeroDivisionError
+#     print("You can't divide by zero")
+# except ValueError: # handles any ValueError
+#     print("Please enter a number")
+# except Exception: # handles any other error
+#     print("Something went wrong!")
+# finally: # executes no matter what happens, usually performs clean up activities like closing the opened file, etc.
+#     print("Do some cleanup here")
+
