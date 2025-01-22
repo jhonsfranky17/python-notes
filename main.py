@@ -628,7 +628,7 @@
 
 # inheritance = allows a class to inherit attributes and methods from another class
 #               helps with code reusability and extensibility
-#               class Child(Parent)
+#               syntax: class Child(Parent)
 
 # class Animal: # parent class
 #     def __init__(self, name):
@@ -792,3 +792,28 @@
 # for animal in animals:
 #     animal.speak()
 #     print(animal.alive)
+
+# static methods = a method that belongs to a class rather than any object from that class (instance)
+#                  usually used for general utility functions
+
+# instance methods = best for operations on instances of the class (objects)
+# static methods = best for utility functions that do not need access to class data
+
+# class Employee:
+
+#     def __init__(self, name, position):
+#         self.name = name
+#         self.position = position
+    
+#     def get_info(self):
+#         return f"{self.name} = {self.position}"
+    
+#     @staticmethod
+#     def is_valid_position(position):
+#         valid_positions = ["Manager", "Cook", "CEO", "CTO", "Janitor"]
+#         return position in valid_positions
+
+# print(Employee.is_valid_position("Janitor")) # static methods are accessed using class name not by any objects
+
+
+
