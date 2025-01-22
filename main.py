@@ -815,5 +815,34 @@
 
 # print(Employee.is_valid_position("Janitor")) # static methods are accessed using class name not by any objects
 
+# class methods = allow operations related to the class itself
+#                 take (cls) as the first parameter, which represents the class itself
 
+# instance (object) methods have "self" as the first parameter whereas, class methods have "cls" as the first parameter
+
+# class Student:
+
+#     count = 0
+    
+#     def __init__(self, name, roll_no):
+#         self.name = name
+#         self.roll_no = roll_no
+#         Student.count += 1
+    
+#     def get_info(self):
+#         print(f"{self.name} : {self.roll_no}")
+    
+#     @classmethod
+#     def get_count(cls):
+#         print(f"Total number of students: {cls.count}")
+
+# student1 = Student("Franklin", 10)
+# student2 = Student("Freddy", 11)
+# student3 = Student("Jen", 14)
+
+# Student.get_count()
+
+# instance methods = best for operations on instances of the class (objects)
+# static methods = best for utility functions that do not need access to class data
+# class methods = best for class-level data or require access to the class itself
 
