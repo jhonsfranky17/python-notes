@@ -1003,7 +1003,7 @@
 
 # file_path = "output.txt"
 
-# with open(file_path, "w") as file:
+# with open(file_path, "w") as file: # with statement is used to wrap the execution of a block with methods defined by a context manager
 #     file.write(txt_data)
 #     print(f"txt file {file_path} was created")
 
@@ -1041,4 +1041,44 @@
 #         print(f"csv file {file_path} was created")
 # except FileExistsError:
 #     print("The file already exists!")
+
+# python reading files (.txt, .json, .csv)
+
+# file_path = "output.txt"
+
+# try:
+#     with open(file_path, "r") as file:
+#         content = file.read()
+#         print(content)
+# except FileNotFoundError:
+#     print("That file was not found")
+# except PermissionError:
+#     print("Permission is denied!")
+
+# import json
+
+# file_path = "output.json"
+
+# try:
+#     with open(file_path, "r") as file:
+#         content = json.load(file)
+#         print(content)
+# except FileNotFoundError:
+#     print("That file was not found")
+# except PermissionError:
+#     print("Permission is denied!")
+
+# import csv
+
+# file_path = "output.csv"
+
+# try:
+#     with open(file_path, "r") as file:
+#         content = csv.reader(file)
+#         for line in content:
+#             print(line)
+# except FileNotFoundError:
+#     print("That file was not found")
+# except PermissionError:
+#     print("Permission is denied!")
 
