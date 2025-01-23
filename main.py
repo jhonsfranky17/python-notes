@@ -1082,3 +1082,22 @@
 # except PermissionError:
 #     print("Permission is denied!")
 
+# date and time
+
+# import datetime
+
+# date = datetime.date(2025, 1, 23)
+# today = datetime.date.today()
+
+# time = datetime.time(12, 30, 0)
+# now = datetime.datetime.now()
+
+# print(date)
+# print(today)
+
+# print(time)
+# print(now)
+
+# now = now.strftime("%H:%M:%S %m-%d-%Y")
+# print(now)
+
