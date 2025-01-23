@@ -1139,3 +1139,30 @@
 
 # print("All chores are complete!")
 
+# How to connect to an API using python
+
+# import requests # to make an API request
+
+# base_uri = "https://pokeapi.co/api/v2/"
+
+# def get_pokemon_info(name):
+#     uri = f"{base_uri}/pokemon/{name}"
+#     response = requests.get(uri)
+    
+#     if response.status_code == 200:
+#         print("Data fetched!")
+#         pokemon_data = response.json() # converting json to python dictionary which consists of key: value pairs
+#         return pokemon_data
+
+#     else:
+#         print("Failed to fetch the data {response.status_code}")
+    
+# pokemon_name = "typhlosion"
+# pokemon_info = get_pokemon_info(pokemon_name)
+
+# if pokemon_info:
+#     print(f"Name: {pokemon_info["name"].capitalize()}")
+#     print(f"Id: {pokemon_info["id"]}")
+#     print(f"Height: {pokemon_info["height"]}")
+#     print(f"Weight: {pokemon_info["weight"]}")
+
