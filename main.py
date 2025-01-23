@@ -1101,3 +1101,41 @@
 # now = now.strftime("%H:%M:%S %m-%d-%Y")
 # print(now)
 
+# multithreading = used to perform multiple tasks concurrently (multitasking)
+#                  good for I/O bound tasks like reading files or fetching data from APIs.
+#                  threading.Thread(target=my_function)
+
+# import threading
+# import time
+
+# def walk_dog(first, last):
+#     time.sleep(8)
+#     print(f"You finished walking {first} {last}")
+
+# def take_out_trash():
+#     time.sleep(2)
+#     print("You take out the trash")
+
+# def get_mail():
+#     time.sleep(4)
+#     print("You get the mail")
+
+# walk_dog()
+# take_out_trash()  # executing functions in order i.e, we need to wait for a function to complete its execution before moving onto the next function
+# get_mail()
+
+# chore1 = threading.Thread(target=walk_dog, args = ("Scooby", "Doo"))
+# chore1.start()
+
+# chore2 = threading.Thread(target=take_out_trash)  # multitasking by executing all the functions simultaneously 
+# chore2.start()
+
+# chore3 = threading.Thread(target=get_mail)
+# chore3.start()
+
+# chore1.join()
+# chore2.join() # with the join(), we are waiting for all the tasks to complete before executing anything below it
+# chore3.join()
+
+# print("All chores are complete!")
+
