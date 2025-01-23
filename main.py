@@ -997,3 +997,48 @@
 # else:
 #     print("The location does not exist")
 
+# python writing files (.txt, .json, .csv)
+
+# txt_data = "I like BBQ"
+
+# file_path = "output.txt"
+
+# with open(file_path, "w") as file:
+#     file.write(txt_data)
+#     print(f"txt file {file_path} was created")
+
+# import json
+
+# employee = {
+#     "name": "Franklin",
+#     "age": 24,
+#     "job": "Freelancer"
+# }
+
+# file_path = "output.json"
+
+# try:
+#     with open(file_path, "w") as file:
+#         json.dump(employee, file, indent=4)
+#         print(f"json file {file_path} was created")
+# except FileExistsError:
+#     print("The file already exists!")
+
+# import csv
+
+# employees = [["Name", "Age", "Job"],
+#             ["Spongebob", 37, "Cook"],
+#             ["Franklin", 24, "Freelancer"],
+#             ["Freddy", 27, "Software Engineer"]]
+
+# file_path = "output.csv" # comma separated values
+
+# try:
+#     with open(file_path, "w", newline="") as file:
+#         writer = csv.writer(file)
+#         for row in employees:
+#             writer.writerow(row)
+#         print(f"csv file {file_path} was created")
+# except FileExistsError:
+#     print("The file already exists!")
+
