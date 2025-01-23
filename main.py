@@ -981,3 +981,19 @@
 # finally: # executes no matter what happens, usually performs clean up activities like closing the opened file, etc.
 #     print("Do some cleanup here")
 
+# python file detection
+
+# import os # os module
+
+# file_path = "test.txt" # relative file path
+
+# if os.path.exists(file_path):
+#     print(f"The location {file_path} exists")
+
+#     if os.path.isfile(file_path):
+#         print("That is a file")
+#     elif os.path.isdir(file_path):
+#         print("That is a directory")
+# else:
+#     print("The location does not exist")
+
