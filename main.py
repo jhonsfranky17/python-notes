@@ -1,29 +1,87 @@
-# this is my first python program
+# Python complete notes
+# Go through each topic/definition and remove the comment from the code below to observe the output of the explained concepts.
+
+# Buckle up soldier, because we're about to start an exciting journey packed with fun and learning!!!
+
+# Imagine you're giving instructions to your friend on how to build a LEGO castle. You would tell them exactly what to do, step by step—like "put the red block here" and "add a yellow piece there."
+
+# Now, instead of talking to a person, you want to give instructions to a computer to do something like adding numbers, showing pictures, or playing music. But here’s the catch: the computer doesn't understand regular language like English or Spanish. It only understands a special language, that’s where programming languages come in!
+
+# A programming language is a special set of instructions that we use to talk to computers. These instructions tell the computer what to do, just like how you give instructions to your friend to build something.
+
+#  Why do we need Programming Languages?
+
+# Computers are super powerful, but they only do what they're told in the right way. We need programming languages to tell them exactly what we want them to do!
+# Want to build a game, a website, or an app? You need a programming language to make it happen! (Sorry, no shortcuts here! If you were thinking of using WordPress or Shopify, just don’t! Shortcuts are for the weak, chin up, soldier! Let’s do this the right way, no easy way out!)
+# Programming languages let us create tools that solve problems, like helping people talk to each other online, calculating numbers, or even making robots move! (sounds interesting right?)
+
+# Alright, enough chit-chat, let's get down to work!
+
+# print function (Starting with the print() function is like learning how to speak in a new language. When you're learning Python, print() helps you talk to the computer and see the results of your code. Without it, you'd be writing all these cool instructions, but the computer wouldn’t tell you what's happening!)
+
+# Imagine you have a magic speaker that can say whatever you tell it to. In Python, the print() function (function is nothing but a block of code that you can reuse 'n' number of times whenever you want) is like that magic speaker, it displays messages on the screen.
+# Think of print() as your "hello world" moment. It’s like meeting a new friend for the first time, once you know how to communicate with Python using print(), everything else becomes a lot easier and more fun!
+
+# The print() function prints the specified message to the screen, or other standard output device.
+#         The message can be a string, or any other object, the object will be converted into a string before written to the screen.
+
+# remove the comments below to see the magic of print()
 # print("Hello guys!")
 # print("I like Biriyani") 
 
-# variables and types
+# I asked you to remove the comments but what exactly are they?
+# Imagine you're writing a note to yourself in a diary or on a piece of paper. You might write down something like, “Hey, don’t forget to buy ice cream later!” 🍦 It's something just for you to remember, but when someone else reads your diary, they don’t need to worry about your ice cream plans.
 
-# strings
+# Well, in Python, comments are just like that note to yourself! They’re a way to leave messages in your code so you can remember things or explain what your code does—without Python trying to run those messages!
+# Two types:
+# Single-line = If you want to leave a quick note on one line, use the # symbol.
+# Multi-line = If you have a longer message or explanation, you can use triple quotes """ or ''' for multi-line comments.
+# Get ready to leave notes in your code like a secret agent!
+
+# input function
+# Imagine you're playing a game where you need to ask your friend for their name. You shout, "Hey, what's your name?" and they reply. That’s exactly what the input() function does, it lets the computer ask you for information! 
+
+# When you use input(), it pauses your program and waits for the user to type something in (sometimes I wish the people around me were computers, at least they'd wait patiently for me to respond like the input() function. But nope, they keep talking while I'm still processing!). Once they hit Enter, whatever they typed gets returned by input() as a string.
+
+# name = input("What's your name? ")
+# print(name)
+
+# input() is super important because it’s how you get user interaction. Without it, the computer would be like a robot with no clue about what the user wants!
+
+# Variables and Types
+
+# Imagine you have a magic box where you can store different things, like a number, a word, or even a list of things. You can give this box a name so you can find it later.
+# In programming, this magic box is called a variable. It holds information that the computer can use later.
+
+# Types
+
+# Integer(int) = Think of this like a box that holds only whole numbers (no decimals).
+
+# age = 24 
+# print(f"I am {age} years old") 
+
+# Notice here I used formatted string or commonly known as f-string to incorporate my variable within the double quotation so that it prints the value which is stored in the variable. Python will replace {age} with the value stored in the variable age.
+# You put a 'f' before quotes to make it a f-string and wrap the variable name within curly braces to get the value stored inside it.
+# There are tons of ways to grab the value from a variable, but let’s be real, "f-strings" are the cool kids on the block! It’s all about personal preference, but hey, stick to one, just like you promised your partner you’d stay loyal! 
+
+# Float(float) = This box holds numbers with decimals, like prices or temperatures.
+
+# price = 10.99
+# print(f"The price is {price}")
+
+# String(str) = This box stores words, names, or any sequence of characters (anything inside quotes).
+
 # first_name = "Franklin"
 # food = "Biriyani"
-# email = "franklinjettyjohnson6@gmail.com"
+# email = "jhonsfranky17@gmail.com"
 
 # print(first_name)
 # print(f"Hello {first_name}")
 # print(f"I like {food}")
 # print(f"My email is {email}")
 
-# integers
-# age = 24 
-# print(f"I am {age} years old")
+# Boolean(bool) = This is a Yes/No box that stores only True or False
 
-# float
-# price = 10.99
-
-# print(f"The price is {price}")
-
-# boolean
 # is_student = True
 
 # if is_student:
@@ -31,32 +89,56 @@
 # else:
 #     print("You are not a student")
 
-# typecasting - the process of converting a variable from one data type to another
-# str(), int(), float(), bool(), list()
+# Typecasting = The process of converting a variable from one data type to another (text book definition but we don't want this :), I'll break it down for you )
+# Imagine you have different types of boxes:
+# A number box (for numbers)
+# A word box (for text)
+# A decimal box (for decimal numbers)
+# Sometimes, you need to change the type of box to fit your needs. Typecasting (or Type Conversion) helps you do this in Python!
 
-# name = "Franklin Jetty Johnson"
+# Here are some typecasting functions in Python that lets you change the type of a variable from one to another.
+# str(), int(), float(), bool(), list()[don't slam your heads against the wall trying to figure out lists, just hold your horses, soldier! I've got your back!]
+
+# By default, Python treats all user inputs as strings, but you can easily change them to other types using typecasting.
+# Even if you type a number, like 123, Python sees it as the string "123". If you want to work with numbers, you'll need to typecast them into an integer or float.
+
+# name = "Franklin Johnson"
 # age = 24
-# gpa = 3.2
+# gpa = 8.4
 # is_student = True
 
-# age = str(age)
-# age += "1"
+# print(type(age)) # type() returns the type of the variable/value.
+# age = str(age) # typecasting integer to string using str()
+# age += "1" # Adding "1" to the string "24" (now age is "241", note that I used '+=' which is a shortcut for age = age + "1")
 
-# print(type(age))
+# print(type(age)) # Here the type of age was integer initially, but changed to string.(Don't believe me? Go ahead, hit run and watch the magic happen!)
 # print(age)
 
-# input() = A funtion that prompts the user to enter data. Returns the enteres data as a string
+# Built-in functions
 
-# name = input("Enter your name: ")
-# age = int(input("Enter your age: ")) # typecasting entered string type to int
+# Built-in functions in Python are pre-written functions that come with the language. They’re like tools you can grab from a toolbox without needing to build them yourself.
 
-# age += 1
+# Think of it this way: If you’re playing a video game and you need to open a door, you don’t have to code the door opening mechanics yourself. Python already gives you a key to open the door whenever you need it, without any extra effort!
 
-# print(f"Hello {name}")
-# print("Happy Birthday!")
-# print(f"You are {age} years old")
+# These built-in functions are super handy because they allow you to perform common tasks quickly and easily. You don't have to reinvent the wheel every time you want to do something simple like adding numbers or converting data types.
+
+# Ah, I know what you're thinking - "Do I really need to tell you some examples of built-in functions?" Come on, you already know them! input(), print(), type(), they're like old friends by now. I mean, if you don’t know them yet, where have you been?
+
+# But okay, for the sake of a quick refresher, let's just say these are your everyday tools in the Python toolkit. So next time when you're stuck, just think of these buddies, they've got your back just like me :)!
 
 # built-in math functions
+
+# Built-in math functions in Python are like pre-built tools in a toolbox that help you do mathematical operations easily. Instead of writing complex formulas from scratch, you can just use these functions to perform things like addition, subtraction, or even more advanced math like square roots or trigonometric calculations.
+
+# Python has a math module that contains many of these functions. Think of it as a magic library that makes your calculations super easy and fast. 
+
+# import math # importing math module (modules are nothing but code in a separate file, you import or incorporate them in your program)
+
+# print(math.pi) # returns the value of pi
+# print(math.e) # returns the value of e
+# print(math.sqrt(36)) # returns the square root of a number
+# print(math.ceil(9.1)) # returns the rounded up value
+# print(math.floor(9.9)) # returns the rounded down value
 
 # x = 3.14
 # y = -1
@@ -68,20 +150,41 @@
 # result = max(x, y, z) # returns the maximum among the values
 # result = min(x, y, z) # returns the minimum among the values
 
-# print(result)
+# print(result) # make sure you uncomment one result at a time to see the output of different functions
 
-# import math
+# Conditional Statements
 
-# print(math.pi) # returns the value of pi
-# print(math.e) # returns the value of e
-# print(math.sqrt(36)) # returns the square root of a number
-# print(math.ceil(9.1)) # returns the rounded up value
-# print(math.floor(9.9)) # returns the rounded down value
+# Alright, imagine you’re standing at a fork in the road. One path leads to a candy shop and the other leads to a vegetable garden. Now, which path should you take? Well, it all depends on one thing: what you decide!
 
-# if = Do some code only if some condition is true 
-# else do something
+# This is where conditional statements come into play! They're like your decision-making superpower in Python. They let your program choose between different paths based on certain conditions.
 
-# age = int(input("Enter your age: "))
+# In Python, we use keywords like "if", "elif" (else if), and "else" to make those decisions.
+# Keywords = reserved words by any programming language. You can not use a keyword as a name for your variable, function, etc.. In short, you can't use keywords as identifiers.
+# Identifiers = name of your variable, function, etc. (Rules for naming identifiers: https://www.google.com/search?q=identifier+naming+rules+in+python&oq=identifier+naming+&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIICAYQABgWGB4yCAgHEAAYFhgeMggICBAAGBYYHjIICAkQABgWGB7SAQkxMDk1NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
+
+# if = executes the code below only if some condition is True 
+# syntax: if condition:
+            # statement
+
+# else = executes the code below only if all the condition evaluates to False
+# syntax: if condition:
+            # statement
+          else:
+            # statement
+
+# elif = checks another condition if the condition in "if" evaluates to False
+# if condition:
+#     statement
+# elif condition:
+#     statement
+# elif condition:
+#     statement
+# else:
+#     statement
+
+# Note that conditions always evaluate to either True or False values
+
+# age = int(input("Enter your age: ")) # typecasting to integer type because remember input() treats everything as strings
 
 # if age >= 18:
 #     print("You are eligible to vote in INDIA!")
