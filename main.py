@@ -30,7 +30,7 @@
 # print("I like Biriyani") 
 
 # I asked you to remove the comments but what exactly are they?
-# Imagine you're writing a note to yourself in a diary or on a piece of paper. You might write down something like, “Hey, don’t forget to buy ice cream later!” 🍦 It's something just for you to remember, but when someone else reads your diary, they don’t need to worry about your ice cream plans.
+# Imagine you're writing a note to yourself in a diary or on a piece of paper. You might write down something like, “Hey, don’t forget to buy ice cream later!” It's something just for you to remember, but when someone else reads your diary, they don’t need to worry about your ice cream plans.
 
 # Well, in Python, comments are just like that note to yourself! They’re a way to leave messages in your code so you can remember things or explain what your code does—without Python trying to run those messages!
 # Two types:
