@@ -169,20 +169,20 @@
 # else = executes the code below only if all the condition evaluates to False
 # syntax: if condition:
             # statement
-          else:
+        #   else:
             # statement
 
 # elif = checks another condition if the condition in "if" evaluates to False
-# if condition:
-#     statement
-# elif condition:
-#     statement
-# elif condition:
-#     statement
-# else:
-#     statement
+# syntax: if condition:
+#            statement
+#         elif condition:
+#            statement
+#         elif condition:
+#            statement
+#         else:
+#            statement
 
-# Note that conditions always evaluate to either True or False values
+# Note that conditions always evaluate to either True or False values (Boolean: now you know what a Boolean is. You're welcome!)
 
 # age = int(input("Enter your age: ")) # typecasting to integer type because remember input() treats everything as strings
 
@@ -193,12 +193,24 @@
 # else:
 #     print("Sorry, you are not eligible to vote in INDIA")
 
-# logical operators = evaluate multiple conditions (or, and , not)
-# or = at least one condition must be True
-# and = both conditions must be True
-# not = inverts the condition (not False, not True)
+# Logical Operators:
+# Alright! Let’s talk about logical operators in Python. Think of them like the superheroes of the decision-making world. They help you combine multiple conditions together and make your program super smart.
 
-# logical or = or
+# Imagine you're trying to decide whether to go out for a walk. Here's how it might go:
+
+# You ask yourself: "Is it sunny?"
+# You also ask: "Do I have enough time?" 
+# Finally, you ask: "Am I feeling lazy?" 
+# Now, to decide if you're going out, you’ll need to combine these conditions!
+# Logical operators are like connectors in your decision-making. They help you combine different questions (conditions) into a single, bigger question.
+
+# The three main logical operators are:
+# or = Only one condition needs to be true for the whole thing to be true.
+# and = Both conditions need to be true for the whole thing to be true.
+# not = Reverses the condition. If it's true, it becomes false; if it's false, it becomes true.
+
+# logical or: and
+
 # temp = 30
 # is_raining = False
 
@@ -207,7 +219,7 @@
 # else:
 #     print("The outdoor event is still scheduled")
 
-# logical and = and
+# logical and: and
 
 # is_sunny = True
 
@@ -221,7 +233,7 @@
 #     print("It is warm outside")
 #     print("It is sunny")
 
-# logical not = not
+# logical not: not
 
 # if temp >=28 and not is_sunny:
 #     print("It is hot outside")
@@ -233,15 +245,17 @@
 #     print("It is warm outside")
 #     print("It is cloudy")
 
-# conditional expression = A one-line shortcut for the if-else statement (ternary operator)
-#                          Print or assign one of two values based on a condition
-#                          X if condition else Y
+# Conditional Expressions/ Ternary Operators = 
+# A one-line shortcut for the if-else statement
+# Print or assign one of two values based on a condition
+# X if condition else Y
 
 # num = 5
 
 # print("Positive" if num > 0 else "Negative")
 
-# string methods
+# String Methods
+# They help you manipulate strings (a.k.a. text) in super cool ways without breaking a sweat! Think of them as your little helpers that take care of the boring stuff, so you can focus on having fun with your code.
 
 # name = input("Enter your full name: ")
 # phone_number = input("Enter your phone number: ")
@@ -261,10 +275,14 @@
 # result = phone_number.endswith("0") # returns true if the string ends with the desired character
 
 # print(result)
-
+# The list goes on! If you want to know all the string methods, print what's written below
 # help(str) # returns all the string methods
 
-# indexing = accessing elements of a sequence using [] (indexing operator)
+# Indexing:
+# Alright, indexing in Python is like having a treasure map for a string, list, or any collection where you need to find specific items. It helps you pinpoint exactly where things are located, whether you're looking for the first letter of a word or the third item in a list.
+# In Python, indexing is the way we access individual elements in sequences like strings, lists, or tuples. It’s like going through the pages of a book and pointing directly at the one you want to read. 
+
+# We use the indexing operator "[]" to access individual elements
 #            [start : end : step] 
 
 # credit_number = "123-34343-2313-323"
@@ -277,7 +295,10 @@
 # print(credit_number[::3]) # returns every 3rd character starting from the first character (included)
 # print(credit_number[::-1]) # reverses the string, add -1 at the end to reverse the given string
 
-# format specifiers = {value:flags} format a value based on what flags are inserted
+# Format Specifiers:
+# Alright, format specifiers are like your personal stylists for strings in Python! They help you control how values (like numbers, dates, etc.) appear in your output. Think of them as a way to tell Python, "Hey, I want this value to look a certain way!" and Python says, "Got it!" 
+
+# syntax: {value:flags} format a value based on what flags are inserted
 
 # .(number)f = round to that many decimal places (fixed point)
 # :(number) = allocate that many spaces
@@ -297,9 +318,19 @@
 # print(f"Price 1 is {price1:.1f}")
 # print(f"Price 2 is {price2:.1f}")
 # print(f"Price 3 is {price3:.1f}")
+
 # you can also use multiple specifiers together
 
-# while loop = execute some code WHILE some condition remains true
+# Loops (Trust me, you’ll thank me for this topic for the rest of your career!)
+
+# Imagine you want to do something over and over again, like practicing your dance moves, or maybe eating pizza (who wouldn't want to do that?). Well, loops in Python let you repeat tasks without writing the same thing again and again. Think of a loop as your personal repetition machine!
+# In programming, loops are like repetitive tasks that you want to do over and over, but you don’t want to type the same thing repeatedly. Instead, you tell: “Hey, I want you to do this X number of times”, and the language listens to you. 
+# Loops are like the secret sauce in programming, no matter which language you’re using! I work with languages like Java, TypeScript, C, and C++ (just a humble flex), and guess what? Loops are in all of them!
+
+# There are mainly two loops in python:
+# while loop and for loop
+
+# while loop = executes the code WHILE some condition remains true
 
 # name = input("Enter your name: ")
 
@@ -309,13 +340,17 @@
 
 # print(f"Hello {name}")
 
-# while is kind of "if statement" (executes the statements below it only once) but executes the statements until the condition evaluates to false
+# while is kind of "if statement" ("if" executes the statements below it only once) but "while" executes the statements until the condition evaluates to False
 
-# for loops = execute a block of code a fixed number of times.
-#            You can iterate over a range, string, sequence, etc
+# for loop = executes a block of code a fixed number of times.
+# You can iterate over a range, string, sequence, etc
+# It's like saying, "Do this for every item in the list, and we’ll repeat it until we’ve done everything." Think of it as doing homework problems one by one.
+
+#  syntax: for variable in iterable:
+#              code to be executed
 
 # for i in range(1, 11): # end exclusive
-#     print(i)
+#     print(i) # prints the numbers from 1 to 10
 
 # for i in reversed(range(1, 11)): # counts from backwards, enclose the range function within the reversed() 
 #     print(i)
@@ -329,30 +364,50 @@
 #     print(i)
 
 # continue, break keywords work in the same manner as it works with other programming languages
+# continue = ignores the statements below the keyword "continue"
+# break = breaks from the loop
 
-# import time
+# import time # importing time module
 
 # my_time = int(input("Enter the time in seconds: "))
 
 # for i in range(0, my_time):
 #     print(i)
-#     time.sleep(1) # Delay execution for a given number of seconds. The argument may be a floating-point number for subsecond precision.
+#     time.sleep(1) # delays execution for a given number of seconds. The argument may be a floating-point number for subsecond precision.
 
 # print("TIME'S UP!") 
 
 # nested loop = A loop within another loop (outer, inner)
+# syntax:
 #               outer loop:
 #                   inner loop:
 
 # for i in range(3): # iterates for 3 times
 #     for j in range(1, 10): # iterates from 1 to 9
-#         print(j, end = " ") # usually end of a print statement is new line, but we can modify it
+#         print(j, end = " ") # usually end of a print statement is new line, but we can modify it with the help of "end" argument (Hang tight! We’ll dive into arguments and parameters soon, but first, let’s understand some basics.)
 #     print() # prints new line outside inner loop
 
-# collection = single "variable" used to store multiple values
-# List = [] ordered and changeable. Duplicates OK
-# Set = {} unordered and immutable, but Add/Remove OK. No duplicates
-# Tuple = () ordered and unchangeable. Duplicates OK. Faster
+# Collection:
+# In programming, a collection refers to a group or container that holds multiple items or elements. It’s like a box where you can store different things (like toys, books, or candy), and each item inside the box is an element. The collection itself is a data structure that makes it easier to manage and manipulate these items.
+# Single "variable" used to store multiple values
+
+# Types:
+
+# List: 
+#  A collection of ordered items. You can think of it like a row of books on a shelf, where each book is in a specific place, and you can access them by their position (index).
+# represented by [], ordered and changeable. Duplicates OK
+
+# Set:
+# A collection of unique items (no duplicates allowed). It's like a box where you can only put one of each toy, no duplicates.
+# represented by {}, unordered and immutable, but Add/Remove is allowed whereas, duplicates are not allowed.
+
+# Tuple:
+# An ordered collection like a list, but immutable, meaning once you put something in a tuple, you can’t change it. It’s like a sealed box—once it’s packed, it’s done.
+# represented by (), ordered and unchangeable. Duplicates are allowed. Faster than list
+
+# Dictionary:
+# A collection of key-value pairs. Think of it as a contact list where each name (key) is paired with a phone number (value).
+# represented by {}, ordered and changeable, No duplicates are allowed
 
 # List
 
@@ -403,12 +458,11 @@
 #              ["chicken", "fish", "turkey"]
 #              ] # another way of creating a 2D list
 
-# print(groceries[0][3]) # to access an element, we use two index operator
+# print(groceries[0][3]) # to access an element in a 2D List, we use two indexing operators (think of 2D Lists as Matrices)
 
-# you can do the same with tuple and set
+# You can do the same with tuple and set
 
-# dictionary = a collection of {key:value} pairs
-#              ordered and changeable, No duplicates
+# Dictionary:
 
 # capitals = {
 #     "USA" : "Washington DC",
@@ -437,7 +491,7 @@
 # for key, value in items: # iterating through each key value pair and printing it
 #     print(f"{key} : {value}")
 
-# concession stand program
+# Concession Stand Program
 
 # menu = {
 #     "pizza" : 3.00,
@@ -465,22 +519,29 @@
 
 # print(f"TOTAL: {total}")
 
-# generating random numbers in python
+# Generating random numbers in Python (It's way easier in Python compared to other languages)
 
-# import random 
+# import random # importing module named "random"
 
 # options = ("rock", "paper", "scissors")
 # cards = ["2", "3", "4", "A", "J", "K", "Q", "10"]
 
 # number = random.randint(1, 6) # generates a random whole integer within the range specified
 # number = random.random() # returns a random floating point number between 0 and 1
-# option = random.choice(options) # returns a random choice from the options tuple
+# option = random.choice(options) # returns a random choice from the options tuple (This is why Python is the superhero of competitive coding! I mean, generating a random choice from a list is a breeze here, but in Java, Well, let’s just say, you'd need a whole team of engineers to get it done!)
+
 # random.shuffle(cards) # randomly shuffles the cards list
 
 # print(cards)
 
-# function = A block of reusable code
-#            place () after the function name to invoke it
+# Function(the moment you've all been waiting for!):
+
+# Alright! Imagine you have a magic box. Every time you put something in the box and ask it to do something, it gives you back a result. For example, you put in a number, and the box gives you back double that number. Or you put in a name, and the box says "Hello, [name]!"
+
+# In programming, functions are like these magic boxes. You put in something (called "arguments"), and the function gives you back something (called the "return value").
+# A function is block of reusable code that can be invoked/called as and when required.
+
+# place () after the function name to invoke it
 
 # def hello_world(): # using "def" keyword, we "define a function" followed by a valid function name, paranthesis and a colon
 #     print("Hello World!")
@@ -491,42 +552,56 @@
 
 # hello_world() # invoking the function
 
-# return = statement used to end a function
-#          and send a result back to the caller
+# return = statement used to end a function and send a result back to the caller
 
 # def add(x, y):
 #     return x + y
 
 # print(add(10, 20))
 
-# default arguments = A default value for certain parameters
-#                     default is used when that argument is omitted
-#                     make your functions more flexible, reduces number of arguments
-#                     1. positional, 2. DEFAULT, 3. keyword, 4. arbitrary
+# Arguments and Parameters
+
+# Ask a senior software engineer what a parameter and an argument are, and there’s a good chance they’ll give you a confused look like they’ve just been asked to solve a Rubik's cube blindfolded. The names are like twins, similar, but you’re never quite sure which one is which! I'll break it down for you so that next time someone asks you the difference between the both, you can easily answer.
+
+# Parameter:
+# A parameter is like a placeholder inside the function that tells you what kind of ingredient the magic box needs. It's like saying, "Hey, I need a number!" but not specifying what number exactly. It’s just the name of the ingredient.
+
+# def greet(name):  # "name" is the parameter
+#     print("Hello, " + name + "!")
+
+# Argument:
+# An argument is the actual thing you put into the magic box when you call the function. It’s like saying, “Here’s the number I’m giving you!” It’s the real ingredient that goes into the function.
+
+# greet("Alice")  # "Alice" is the argument
+# greet("Bob")    # "Bob" is the argument
+
+# Different Types:
+
+# Default = You can set a default value for a parameter
+# Default is used when that argument is omitted
+# It makes your functions more flexible, reduces number of arguments
 
 # def net_price(list_price, discount = 0, tax = 0.05):
 #     return list_price * (1 - discount) * (1 + tax)
 
-# print(net_price(500))
+# print(net_price(500)) # here discount and tax is not given in the function call and hence they take their default values 0 and 0.05 respectively.
 
-# default parameters should be at the end of the parameter list
+# Note that the Default parameters should be at the end of the parameter list
 
-# keyword arguments = an argument preceded by an identifier
-#                     helps with readability
-#                     1. positional, 2. default, 3. KEYWORD, 4. arbitrary
+# Keyword Arguments = an argument preceded by an identifier
+# Helps with readability
 
 # def hello(greeting, title, first, last):
 #     print(f"{greeting} {title} {first} {last}")
 
-# hello(first="Franklin", greeting="Hello", last="Johnson", title="Mr.",)
+# hello(first="Franklin", greeting="Hello", last="Johnson", title="Mr.",) # order does not matter when you are usign keyword arguments
 
 # print("1", "2", "3", "4", "5", sep="-") # here sep is a keyword argument
 
-# arbitrary argument
+# Arbitrary Argument
 # args = allows you to pass multiple non-key arguments
 # **kwargs = allows you to pass multiple keyword-arguments
-# * unpacking operator
-# 1. positional 2. default 3. keyword 4. ARBITRARY
+# * = unpacking operator
 
 # def add(*nums): # nums is a tuple which consists of all the arguments passed when invoked
 #     total = 0
@@ -545,10 +620,14 @@
 # iterables = an object/collection that can return its elements one at a time, allowing it to be iterated over in a loop
 # eg: list, set, tuple, dictionary, string
 
-# membership operators = used to test whether a value or variable is found in a sequence
-#                        (string, list, tuple, set, or dictionary)
-#                        1. in
-#                        2. not in
+
+# TIME FOR A QUICK BREAK! KUDOS, SOLDIER! YOU'VE COME THIS FAR, AND YOU'RE DOING GREAT!
+# I've got a secret to share once you reach the end! (No peeking now!)
+
+# Membership Operators = used to test whether a value or variable is found in a sequence (string, list, tuple, set, or dictionary)
+
+# 1. in
+# 2. not in
 
 # word = "FRANKLIN"
 
@@ -568,9 +647,9 @@
 #     print(f"{letter} is present in the word")
 
 
-# list comprehension = a concise way to create lists in python 
-#                      compact and easier to read than traditional loops
-#                      syntax : [expression for value in iterable if condition (optional)]
+# List Comprehension = A concise way to create lists in python 
+# Compact and easier to read than traditional loops
+# syntax : [expression for value in iterable if condition (optional)]
 
 # doubles = [x * 2 for x in range(1,11)]
 
@@ -589,9 +668,9 @@
 # print(positive_numbers)
 # print(negative_numbers)
 
-# match-case statement (switch) = an alternative to using many 'elif' statements
-#                                 execute some code if a value matches a 'case'
-#                                 benefits: cleaner and syntax is more readable 
+# Match-Case Statement (switch) = an alternative to using many 'elif' statements
+# Executes some code if a value matches a 'case'
+# Benefits: cleaner and syntax is more readable 
 
 
 # def day_of_week(day):
@@ -626,10 +705,9 @@
 
 # print(is_weekend("Monday"))
 
-# module = a file containting code you want to include in your program
+# Module = a file containting code you want to include in your program
 #          use 'import' to include a module (built-in or your own)
 #          useful to break up a large program into reusable separate files
-
 
 # import math
 # print(math.pi)
@@ -640,10 +718,10 @@
 # from math import pi 
 # print(pi)
 
-# variable scope = where a variable is visible and accessible
-# scope resolution = (LEGB) Local -> Enclosed -> Global -> Built-in
+# Variable Scope = where a variable is visible and accessible
+# Scope Resolution = (LEGB) Local -> Enclosed -> Global -> Built-in
 
-# substitution cipher encryption program
+# Substitution Cipher Encryption Program
 
 # import random
 # import string
@@ -677,14 +755,22 @@
 # print(f"Original message: {cipher_text}")
 # print(f"Decrypted message: {plain_text}")
 
-# object = a "bundle" of related attributes (variable) and methods (functions)
+# Class and Object (You definitely don’t want to skip this, trust me, you’ll regret it later!):
+
+#  Let’s think of objects like action figures or stuffed animals.
+
+# A class is like the manual or instructions that tells you how to create your action figure. It tells you what features your action figure should have. For example, an action figure might have a name, color, and a special move.
+
+# An object is the actual action figure you create using the manual! Each action figure (object) has the features defined in the manual (class), but each action figure can be a little different. One might be named "Superhero Steve," and another might be named "Princess Sally," but both are action figures.
+
+# A "bundle" of related attributes (variable) and methods (functions)
 # eg: phone, cup, book
-# you need a "class" to create many objects
+# You need a "class" to create many objects
 
 # class = (blueprint) used to design the structure and layout of an object
 
-# class Car: # class name should be capital
-#     def __init__(self, model, year, color, for_sale): # constructor to initialise the object
+# class Car: # class is created using the keyword class and note that I am making the first letter of my class name capital.
+#     def __init__(self, model, year, color, for_sale): # constructor to initialise the object (constructor explained below)
 #         self.model = model
 #         self.year = year
 #         self.color = color
@@ -712,9 +798,15 @@
 # car1.drive()
 # car1.stop()
 
-# class variables = shared among all instances of a class
-#                   defined outside the constructor
-#                   allow you to share data among all objects created from that class
+# Constructor:
+# In Python, a constructor is a special method inside a class that gets called when you create an object (instance) of that class. It's like when you build a new toy from a box of parts, and the constructor is the person who sets everything up for you right when you open the box!
+# In Python, we use a special method __init__ to initialise the object (methods that start with double underscore are called as dunder methods or magic functions, which we will explain in depth later!)
+# Note that I am calling my functions as methods now. Any function defined inside a class is called as method.
+
+# Class Variables:
+# Shared among all instances(objects) of a class
+# Defined outside the constructor
+# Allow you to share data among all objects created from that class
 
 # class Car: # class name should be capital
 
@@ -729,9 +821,13 @@
 
 # print(Car.company) # you can also access the class variable using any of the objects but it is best to use it with the class name
 
-# inheritance = allows a class to inherit attributes and methods from another class
-#               helps with code reusability and extensibility
-#               syntax: class Child(Parent)
+# Inheritance(a must-know topic in interviews):
+
+# Inheritance in Python is like when a child gets traits or abilities from their parents. Just like how you might inherit things like your hair color, height, or love for pizza from your parents, classes in Python can inherit features and behaviors from other classes.
+
+# In programming, inheritance allows a class (called a child class) to inherit the properties and methods of another class (called a parent class). This way, you don’t have to rewrite code, and you can reuse and extend the functionality of the parent class.
+
+# Syntax: class Child(Parent)
 
 # class Animal: # parent class
 #     def __init__(self, name):
@@ -769,10 +865,14 @@
 # cat.speak()
 # mouse.speak()
 
-# multiple inheritance = child class inherits from more than one parent class
-#                        C(A,B)
-# multilevel inheritance = child class inherits from a parent class which in turn inherits from another parent
-#                          C(B) <- B(A) <- A
+# Types:
+
+# Multiple Inheritance;
+# This is when a child class inherits from two or more parent classes. It’s like a child getting traits from both parents and grandparents. However, Python handles it carefully to avoid conflicts in methods or attributes from different parents.
+
+# Multilevel Inheritance:
+# This is when a child class inherits from a parent class, and then another class inherits from that child class. It’s like a family tree, where traits pass down from generation to generation.
+# C(B) <- B(A) <- A
 
 # class Animal:
 
@@ -819,8 +919,12 @@
 
 # rabbit.eat()
 
-# super() = function used in a child class to call methods from a parent class(superclass).
-#           allows you to extend the functionality of the inherited methods
+# super():
+# In Python, super() is a built-in function that allows you to call a method from a parent class within a child class. It's used to access inherited methods from a parent class, especially in object-oriented programming (OOP).
+
+# Imagine you're playing a video game where your character (child class) gets special abilities from their parent (the parent class). You want your character to use their parent's special abilities, but also add some of their own abilities on top of it. super() helps you do that!
+
+# Allows you to extend the functionality of the inherited methods
 
 # class Shape:
 #     def __init__(self, color, filled):
@@ -859,19 +963,30 @@
 # print(triangle.width)
 # print(triangle.height)
 
-# you can also use super() to invoke a function defined in the parent class
+# You can also use super() to invoke a function defined in the parent class
 
-# polymorphism = greek words meaning to "have many forms or faces"
-#                poly = many
-#                morphe = form
+# Polymorphism:
+# Ah, Polymorphism! Now we're getting into some cool stuff in programming!
+# Let’s break it down like you’re a 10-year-old:
 
-#                two ways to achieve polymorphism
-#                1. inheritance = an object could be treated of the same type as a parent class
-#                2. "duck typing" = object must have necessary attributes/methods
+# Imagine you have a magic button in your house. When you press it, it can do different things based on who is pressing it:
+# When Mom presses the button, it makes dinner.
+# When Dad presses the button, it makes a coffee.
+# When You press the button, it plays music.
+# Even though you’re pressing the same button, the action it performs is different. That’s Polymorphism in action!
 
-# duck typing = another way to achieve polymorphism besides inheritance
-#               object must have the minimum necessary attributes/methods
-#               if it looks like a duck and quacks like a duck, it must be a duck
+# Polymorphism is a fancy word that basically means "many shapes" or "many forms". In programming, it means that one function or method can work with different types of objects in different ways. It allows you to use a single interface for different data types.
+
+# Two ways to achieve polymorphism
+# 1. Inheritance = an object could be treated of the same type as a parent class
+# 2. "Duck Typing" = object must have necessary attributes/methods
+
+# Duck Typing:
+# The programming concept that sounds like it came straight from a farm, right? But trust me, it’s way cooler than it sounds!
+# In duck typing, the type or class of an object is determined by its behavior, not by its specific type. Simply put, if it looks like a duck, swims like a duck, and quacks like a duck, then it’s a duck, even if it’s technically not a duck at all!
+# You don’t have to check the type of an object before using it. If an object has the required method or behavior, Python lets you use it without caring what it is. As long as the object can do what you expect, you don’t need to worry about what class or type it is.
+
+# Another way to achieve polymorphism besides Inheritance
 
 # class Animal:
 #     alive = True
@@ -896,11 +1011,13 @@
 #     animal.speak()
 #     print(animal.alive)
 
-# static methods = a method that belongs to a class rather than any object from that class (instance)
-#                  usually used for general utility functions
+# Static Methods(A No-Object-Required Party):
+# Imagine this: You have a method that you want to share with the world, but you don't need any of the fancy stuff that comes with class objects. You just want a plain old function, but inside a class. Enter Static Methods!
 
-# instance methods = best for operations on instances of the class (objects)
-# static methods = best for utility functions that do not need access to class data
+# A static method in Python is a method that belongs to a class, but doesn’t depend on any instance of the class (no need to create an object). It doesn’t need access to any instance-specific data—it's a standalone function that’s just inside a class for organization.
+
+# Instance methods = best for operations on instances of the class (objects)
+# Static methods = best for utility functions that do not need access to class data
 
 # class Employee:
 
@@ -918,10 +1035,14 @@
 
 # print(Employee.is_valid_position("Janitor")) # static methods are accessed using class name not by any objects
 
-# class methods = allow operations related to the class itself
-#                 take (cls) as the first parameter, which represents the class itself
+# Class Methods:
+# Let’s talk about class methods, which are like the VIP members of the Python method family. They’re not just regular methods, they’re special methods that operate on the class itself instead of instances.
 
-# instance (object) methods have "self" as the first parameter whereas, class methods have "cls" as the first parameter
+# Think of it this way: If a static method is just hanging out and doing its job without the need for the class or instance, then a class method is like a VIP guest who gets access to the class's secretive information (class variables) but still doesn’t need to be an object to do it!
+
+# A class method is a method that belongs to the class rather than the instance. It has access to the class itself and can modify class-level variables. The key difference from instance methods is that class methods use the "cls" as their first argument (not self), and they’re defined using the @classmethod decorator.
+
+# Instance (object) methods have "self" as the first parameter which refers to the object that is using the method at that point of time whereas, class methods have "cls" as the first parameter
 
 # class Student:
 
@@ -945,14 +1066,19 @@
 
 # Student.get_count()
 
-# instance methods = best for operations on instances of the class (objects)
-# static methods = best for utility functions that do not need access to class data
-# class methods = best for class-level data or require access to the class itself
+# Quick Recap!
+# Instance Methods = best for operations on instances of the class (objects)
+# Static Methods = best for utility functions that do not need access to class data
+# Class Methods = best for class-level data or require access to the class itself
 
-# magic methods = dunder methods (double underscore) __init__, __str__, __eq__
-#                 they are automatically called by many of python's built-in operations
-#                 they allow developers to define or customize the behavior of objects
+# Magic methods (The secret wizards of Python):
+# Let’s dive into the world of magic methods, a.k.a. dunder methods (because they start and end with double underscores). These are special methods in Python that allow you to customize the behavior of your objects. They might seem like magic at first, but they’re just Python’s way of letting you define how objects behave when they’re interacted with in certain ways.
 
+# Think of them as wizards that come out when you do something special with your objects—like adding two objects, comparing them, or printing them!
+
+# Magic methods are predefined methods that let you control how your objects behave when you do certain operations on them. They’re not meant to be called directly (because they’re magical!), but you can trigger them when you interact with objects in specific ways.
+
+# Commonly used dunder methods: __init__, __str__, __eq__
 
 # class Book:
 
@@ -970,7 +1096,7 @@
 # book2 = Book("The Alchemist", "Paulo Coelho")
 
 # # print(book1) # if we try to print the object directly, it will give us the memory address. 
-# #                If we want to customize this behavior, we can use magic method __str__ to return whatever we want
+# If we want to customize this behavior, we can use magic method __str__ to return whatever we want
 
 # # print(book1)
 # # print(book2)
@@ -980,8 +1106,8 @@
 # print(book1 == book2) # returns true after customizing the magic method __eq__
 
 # @property = decorator used to define a method as a property (it can be accessed like an attribute)
-#             benefit: add additional logic when read, write, or delete attributes
-#             gives you getter, setter, and deleter method
+# Benefit: add additional logic when read, write, or delete attributes
+# Gives you getter, setter, and deleter method
 
 # class Rectangle:
 
@@ -1037,12 +1163,11 @@
 # del rectangle.width
 # del rectangle.height
 
-# decorator = a function that extends the behavior of another function
-#             w/o modifying the base function
-#             pass the base function as an argument to the decorator
+# decorator = a function that extends the behavior of another function without modifying the base function
+# Pass the base function as an argument to the decorator
 
-#             @add_sprinkles
-#             get_ice_cream("vanilla")
+# @add_sprinkles
+# get_ice_cream("vanilla")
 
 # def add_sprinkles(func): # decorator function
 #     def wrapper(*args, **kwargs): # without this function, the get_ice_cream() gets invoked automatically when the decorator is added
@@ -1064,9 +1189,16 @@
 # get_ice_cream("vanilla")
 # you can apply more than one decorator to the base function 
 
-# exception = an event that interrupts the flow of a program
-#             (ZeroDivisionError, TypeError, ValueError)
-#             1.try, 2.except, 3.finally
+# Exception(Think of it as a "Oops!" moment):
+# Alright, let’s talk about exceptions. In programming, an exception is like a problem or error that happens when something goes wrong while your code is running. Imagine you’re cooking, and you suddenly realize you’ve run out of salt. That’s an exception in your cooking process.
+
+# In Python, when something goes wrong during your program's execution (like dividing by zero, or trying to open a file that doesn't exist), Python will raise an exception to tell you something is wrong. These exceptions are like Python’s way of saying, "Hey, something’s not right here! Help!"
+
+# When an exception happens, the program stops executing and displays an error message. It’s like your program goes on pause and says, "I have a problem here, please fix it!"
+
+# Common exceptions you might encounter
+# (ZeroDivisionError, TypeError, ValueError)
+# 1.try, 2.except, 3.finally
 
 # ZeroDivisionError = occurs when we try to divide a number by 0. 
 # TypeError = if we apply an operation that is not supported between the two objects, then a TypeError exception occurs
@@ -1084,7 +1216,8 @@
 # finally: # executes no matter what happens, usually performs clean up activities like closing the opened file, etc.
 #     print("Do some cleanup here")
 
-# python file detection
+# Python File Detection(Let's check if that file exists!)
+# So, let's talk about how to detect whether a specific file exists or not in Python. Imagine you're looking for your favorite book in a huge library. You can check whether the book is there or not before you start your search. Similarly, in Python, you can check if a file exists before trying to work with it. 
 
 # import os # os module
 
@@ -1204,9 +1337,16 @@
 # now = now.strftime("%H:%M:%S %m-%d-%Y")
 # print(now)
 
-# multithreading = used to perform multiple tasks concurrently (multitasking)
-#                  good for I/O bound tasks like reading files or fetching data from APIs.
-#                  threading.Thread(target=my_function)
+# Multithreading(We are almost done learning Python!):
+# Imagine you're trying to finish your homework, make lunch, and text your friend all at once. It sounds impossible, right? But what if you could split those tasks into smaller chunks and work on them simultaneously? Well, that's what multithreading is like in Python!
+
+# In programming, multithreading allows you to run multiple tasks (or "threads") at the same time within a single program. It's like juggling different tasks so they all get done faster, just like a superhero who can fly, solve mysteries, and save the world all at the same time. 
+
+# Used to perform multiple tasks concurrently (multitasking)
+# Good for I/O bound tasks like reading files or fetching data from APIs.
+
+# Creating thread:
+# threading.Thread(target=my_function)
 
 # import threading
 # import time
@@ -1242,7 +1382,9 @@
 
 # print("All chores are complete!")
 
-# How to connect to an API using python
+# How to connect to an API using Python:
+# API: The bridge between two worlds
+# Imagine you're in a restaurant, and you’re hungry. You can't go directly to the kitchen (well, unless you’re a superhero). So, you tell the waiter what you want, and the waiter goes to the kitchen, picks up your food, and brings it back to you. The waiter here is like an API!
 
 # import requests # to make an API request
 
@@ -1268,3 +1410,14 @@
 #     print(f"Id: {pokemon_info["id"]}")
 #     print(f"Height: {pokemon_info["height"]}")
 #     print(f"Weight: {pokemon_info["weight"]}")
+
+
+"""
+ Congratulations, Soldiers!
+
+You’ve made it to the end of this Python journey! That’s a huge achievement, and I’m super proud of you for sticking with it till the very end. Now, you've got all the basics and core concepts of Python under your belt. But remember, this is just the beginning. There’s a whole world of Python waiting for you to explore, and trust me, the more you dig, the more exciting it gets!
+
+And hey, just a quick secret, I learned Python in under a week! So, if I can do it, YOU CAN DO IT TOO! Everyone has 24 hours in a day. It's how you utilize that time that sets you apart from others. So, take what you’ve learned here, keep practicing, and you’ll be mastering Python before you know it!
+
+Happy Learning, and keep coding like a BOSS! 
+"""
