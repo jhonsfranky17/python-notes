@@ -1,7 +1,7 @@
-# Python complete notes
+# Python Complete Notes
 # Go through each topic/definition and remove the comment from the code below to observe the output of the explained concepts.
 
-# Buckle up soldier, because we're about to start an exciting journey packed with fun and learning!!!
+# Buckle up Soldier, because we're about to start an exciting journey packed with fun and learning!!!
 
 # Imagine you're giving instructions to your friend on how to build a LEGO castle. You would tell them exactly what to do, step by step—like "put the red block here" and "add a yellow piece there."
 
